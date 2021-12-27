@@ -37,7 +37,7 @@ Hooks into the request life cycle and emits `connect` events for each socket tha
 
 ### `netInterceptor.stop()`
 
-Removes the hooks. No `connect` events will be emitted.
+Stops interceptiong. No `connect` or `connection` events will be emitted.
 
 ### `netInterceptor.addListener(event, listener)`
 
