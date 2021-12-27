@@ -33,7 +33,7 @@ netInterceptor.on("connection", (socket) => {
 
 ### `netInterceptor.start()`
 
-Hooks into the request life cycle and emits `connect` events for each socket that connects to a server as well as `connection` events for all intercepted socckets.
+Hooks into the request life cycle and emits `connect` events for each socket that connects to a server as well as `connection` events for all intercepted sockets.
 
 ### `netInterceptor.stop()`
 
