@@ -1,4 +1,4 @@
-Copyright (C) 2014 Andri Möll <andri@dot.ee>
+Copyright (C) 2014 Andri Möll <andri@dot.ee>  
 Copyright (C) 2021 Gregor Marytnus
 
 This program is free software: you can redistribute it and/or modify it under
