@@ -16,7 +16,7 @@ npm install @gr2m/http-recorder
 import netInterceptor from "@gr2m/net-interceptor";
 
 netInterceptor.start();
-netInterceptor.on("intercept", (socket, options, bypass) => {
+netInterceptor.on("connect", (socket, options, bypass) => {
   // call bypass() to continue the unintercepted connection
   if (options.host === "db.example.com") return bypass();
 });
@@ -71,8 +71,8 @@ Once started, `netInterceptor` hooks itself into [the `net.connect`](https://nod
 When a socket is intercepted, we
 
 1. we create a mock net/TLS socket
-2. emit the `intercept` event with the mock socket
-3. if `bypass()` was called in the `intercept` event listener, we let the socket continue unintercepted
+2. emit the `connect` event with the mock socket
+3. if `bypass()` was called in the `connect` event listener, we let the socket continue unintercepted
 4. if `bypass()` was not called
    1. we create another mock socket for the response and emit the "connection" event
    2. we emit `connect` on both mock sockets
