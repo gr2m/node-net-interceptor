@@ -73,6 +73,11 @@ requestSocket[kRemote]; // response socket
 
 `kRemote` is a symbol that can be used to access the response socket from the request socket when handling intercepted requests.
 
+## See also
+
+- [`@gr2m/http-interceptor`](https://github.com/gr2m/node-http-interceptor) - Intercept and mock outgoing http/https requests
+- [`@gr2m/http-recorder`](https://github.com/gr2m/node-http-recorder) - Library agnostic in-process recording of http(s) requests and responses
+
 ## How it works
 
 Once started, `netInterceptor` hooks itself into [the `net.connect`](https://nodejs.org/api/net.html#netconnect) and [the `tls.connect`](https://nodejs.org/api/tls.html#tlsconnectoptions-callback) methods
