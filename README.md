@@ -71,7 +71,7 @@ import { kRemote } from "@gr2m/net-interceptor";
 requestSocket[kRemote]; // response socket
 ```
 
-`kRemote` is a symbol that can be used to access the response sockent from the request socket when handling intercepted requests.
+`kRemote` is a symbol that can be used to access the response socket from the request socket when handling intercepted requests.
 
 ## How it works
 
