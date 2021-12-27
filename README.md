@@ -7,7 +7,7 @@
 ## Install
 
 ```
-npm install @gr2m/http-recorder
+npm install @gr2m/net-interceptor
 ```
 
 ## Usage
