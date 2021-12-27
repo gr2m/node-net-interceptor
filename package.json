@@ -55,5 +55,21 @@
   },
   "engines": {
     "node": ">= 14"
+  },
+  "release": {
+    "branches": [
+      "+([0-9]).x",
+      "main",
+      "next",
+      {
+        "name": "beta",
+        "prerelease": true
+      }
+    ]
+  },
+  "renovate": {
+    "extends": [
+      "github>gr2m/.github"
+    ]
   }
 }
