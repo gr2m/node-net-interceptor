@@ -91,4 +91,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## License
 
-[LGPL]
+[LGPL](LICENSE.md)
