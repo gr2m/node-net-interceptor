@@ -33,11 +33,11 @@ netInterceptor.on("connection", (socket) => {
 
 ### `netInterceptor.start()`
 
-Hooks into the request life cycle and emits `connect` events for each socket that connects to a server as well as `connection` events for all intercepted socckets.
+Hooks into the request life cycle and emits `connect` events for each socket that connects to a server as well as `connection` events for all intercepted sockets.
 
 ### `netInterceptor.stop()`
 
-Removes the hooks. No `connect` events will be emitted.
+Stops interceptiong. No `connect` or `connection` events will be emitted.
 
 ### `netInterceptor.addListener(event, listener)`
 
@@ -63,6 +63,15 @@ Remove an event listener.
 ### `netInterceptor.removeAllListeners(event)`
 
 Removes all event listeners for the given event. Or when called without the `event` argument, remove all listeners for all events.
+
+### `kRemote`
+
+```js
+import { kRemote } from "@gr2m/net-interceptor";
+requestSocket[kRemote]; // response socket
+```
+
+`kRemote` is a symbol that can be used to access the response socket from the request socket when handling intercepted requests.
 
 ## How it works
 
