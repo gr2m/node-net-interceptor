@@ -64,6 +64,15 @@ Remove an event listener.
 
 Removes all event listeners for the given event. Or when called without the `event` argument, remove all listeners for all events.
 
+### `kRemote`
+
+```js
+import { kRemote } from "@gr2m/net-interceptor";
+requestSocket[kRemote]; // response socket
+```
+
+`kRemote` is a symbol that can be used to access the response sockent from the request socket when handling intercepted requests.
+
 ## How it works
 
 Once started, `netInterceptor` hooks itself into [the `net.connect`](https://nodejs.org/api/net.html#netconnect) and [the `tls.connect`](https://nodejs.org/api/tls.html#tlsconnectoptions-callback) methods

@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for considering to contribute to `@gr2m/node-net-interceptor` 💖
+Thank you for considering to contribute to `@gr2m/net-interceptor` 💖
 
 Please note that this project is released with a [Contributor Code of Conduct][./code_of_conduct.md].
 By participating you agree to abide by its terms.
@@ -12,10 +12,10 @@ Node.js 14 or higher is required. Install it from https://nodejs.org/en/. [GitHu
 1. Fork this repository and clone it to your local machine. Using `gh` you can do this
 
    ```
-   gh repo fork gr2m/node-net-interceptor
+   gh repo fork gr2m/net-interceptor
    ```
 
-2. After cloning and changing into the `@gr2m/node-net-interceptor` directory, install dependencies and run the tests
+2. After cloning and changing into the `@gr2m/net-interceptor` directory, install dependencies and run the tests
 
    ```
    npm install

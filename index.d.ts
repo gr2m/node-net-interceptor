@@ -5,6 +5,8 @@ import { EventEmitter } from "node:events";
 declare const interceptor: NetInterceptor;
 export default interceptor;
 
+export declare const kRemote: Symbol;
+
 declare class NetInterceptor extends EventEmitter {
   /**
    * Start intercepting net/tls socket connections.

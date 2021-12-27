@@ -2,7 +2,7 @@ import * as net from "net";
 
 import { expectType } from "tsd";
 
-import netInterceptor from "./index.js";
+import netInterceptor, { kRemote } from "./index.js";
 
 netInterceptor.stop();
 
@@ -19,3 +19,5 @@ netInterceptor.addListener("connection", (socket, options): void => {
   expectType<number>(options.port);
   expectType<string | undefined>(options.host);
 });
+
+expectType<Symbol>(kRemote);
